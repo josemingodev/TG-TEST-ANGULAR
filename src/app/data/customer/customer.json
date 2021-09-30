@@ -1,0 +1,12 @@
+[
+    {
+        "CustomerId": 1,
+        "Name": "Javier",
+        "EmailAddress": "javier@trainingymtest.com"
+    },
+    {
+        "CustomerId": 2,
+        "Name": "Nicolás",
+        "EmailAddress": "nicolas@trainingymtest.com"
+    }
+]

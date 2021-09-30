@@ -1,20 +1,12 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Test TG (Angular)
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+### Requisitos
+* Editor de texto (Visual Studio Code, Notepad++, o alguno con el que se sienta cómodo programando)
+* Node para poder lanzar la aplicación
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+### Models
+#### Customer
+Entidad para guardar la información de cliente.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+**Los ejercicios se han de resolver completando los ficheros que sean necesarios del proyecto Angular**
+**Se suministra un paquete para ayudar en la creación de los componentes, su uso no es obligatorio y se puede realizar los ejercicios como uno mejor lo estime oportuno**
