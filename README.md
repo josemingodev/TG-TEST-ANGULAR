@@ -22,7 +22,7 @@ Entidad que guarda la información de las ventas, tanto del cliente que la ha re
 ### Ejercicio 1
 Se nos ha pedido la creación de un listado de nuestros clientes, por lo que vamos a crear un listado en los que mostrar los datos que tenemos de ellos en nuestra base de datos. Estos datos son el identificador del cliente, el nombre y su dirección de Email. La estructura inicial se encuentra totalmente disponible (customer-list), faltaría completar con la obtención de los datos del servicios (customer.service.ts) y la maquetación del listado.
 
-Como la persona que nos ha mandado a crear el listado le gustan los detalles, la inclusión de cualquier opción de QoL siempre será de agradecir. Ordenación del listado, filtrado, etc...
+Como la persona que nos ha mandado a crear el listado le gustan los detalles, la inclusión de cualquier opción de QoL siempre será de agradecer. Ordenación del listado, filtrado, etc...
 
 Como se muestran los datos en el listado es libre, se valorará que los datos sean fácilmente legibles.
 
