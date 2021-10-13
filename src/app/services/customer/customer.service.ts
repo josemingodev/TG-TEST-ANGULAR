@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import customers from '../../data/customer/customer.json';
 
-import { observable, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Customer } from 'src/app/models/customer/customer';
 
 @Injectable({
