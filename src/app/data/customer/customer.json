@@ -2,31 +2,43 @@
     {
         "CustomerId": 1,
         "Name": "Javier",
-        "EmailAddress": "javier@trainingymtest.com"
+        "EmailAddress": "javier@trainingymtest.com",
+        "Address": "Calle de Javier",
+        "Phone": "11111111111"
     },
     {
         "CustomerId": 2,
         "Name": "Nicolás",
-        "EmailAddress": "nicolas@trainingymtest.com"
+        "EmailAddress": "nicolas@trainingymtest.com",
+        "Address": "Calle de Nicolás",
+        "Phone": "22222222222"
     },
     {
         "CustomerId": 3,
         "Name": "Raquel",
-        "EmailAddress": "raquel@trainingymtest.com"
+        "EmailAddress": "raquel@trainingymtest.com",
+        "Address": "Calle de Raquel",
+        "Phone": "333333333"
     },
     {
         "CustomerId": 4,
         "Name": "Paola",
-        "EmailAddress": "paola@trainingymtest.com"
+        "EmailAddress": "paola@trainingymtest.com",
+        "Address": "Calle de Paola",
+        "Phone": "444444444"
     },
     {
         "CustomerId": 5,
         "Name": "Guillermo",
-        "EmailAddress": "guillermo@trainingymtest.com"
+        "EmailAddress": "guillermo@trainingymtest.com",
+        "Address": "Calle de Guillermo",
+        "Phone": "555555555"
     },
     {
         "CustomerId": 6,
         "Name": "Milagros",
-        "EmailAddress": "milagros@trainingymtest.com"
+        "EmailAddress": "milagros@trainingymtest.com",
+        "Address": "Calle de Milagros",
+        "Phone": "666666666"
     }
 ]

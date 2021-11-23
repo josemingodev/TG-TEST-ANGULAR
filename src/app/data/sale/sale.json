@@ -2,70 +2,116 @@
     {
         "SaleID": 1,
         "CustomerId": 1,
+        "Expand": false,
+        "TotalPrice": 0,
+        "TotalWeight": 0,
         "Lines": [
             {
                 "ProductId": 1,
-                "Units": 4
+                "Units": 4,
+                "Price": 10.5,
+                "Weight": 2,
+                "ProductName": "Manzana"
             },
             {
                 "ProductId": 2,
-                "Units": 3
+                "Units": 3,
+                "Price": 27.8,
+                "Weight": 2,
+                "ProductName": "Platano"
+
             }
         ]
     },
     {
         "SaleID": 2,
         "CustomerId": 1,
+        "Expand": false,
+        "TotalPrice": 0,
+        "TotalWeight": 0,
         "Lines": [
             {
                 "ProductId": 1,
-                "Units": 20
+                "Units": 20,
+                "ProductName": "Manzana",
+                "Price": 10.5,
+                "Weight": 1
             },
             {
                 "ProductId": 3,
-                "Units": 50
+                "Units": 50,
+                "ProductName": "Leche",
+                "Price": 50,
+                "Weight": 7
             }
         ]
     },
     {
         "SaleID": 3,
         "CustomerId": 2,
+        "Expand": false,
+        "TotalPrice": 0,
+        "TotalWeight": 0,
         "Lines": [
             {
                 "ProductId": 4,
-                "Units": 2
+                "Units": 2,
+                "ProductName": "Pan",
+                "Price": 3,
+                "Weight": 3
             },
             {
                 "ProductId": 5,
-                "Units": 1
+                "Units": 1,
+                "ProductName": "Galletas",
+                "Price": 24,
+                "Weight": 10
             }
         ]
     },
     {
         "SaleID": 4,
         "CustomerId": 2,
+        "Expand": false,
+        "TotalPrice": 0,
+        "TotalWeight": 0,
         "Lines": [
             {
                 "ProductId": 2,
-                "Units": 400
+                "Units": 400,
+                "ProductName": "Platano",
+                "Price": 27.8,
+                "Weight": 2
             },
             {
                 "ProductId": 4,
-                "Units": 2
+                "Units": 2,
+                "ProductName": "Pan",
+                "Price": 3,
+                "Weight": 3
             }
         ]
     },
     {
         "SaleID": 5,
         "CustomerId": 2,
+        "Expand": false,
+        "TotalPrice": 0,
+        "TotalWeight": 0,
         "Lines": [
             {
                 "ProductId": 1,
-                "Units": 75
+                "Units": 75,
+                "ProductName": "Manzana",
+                "Price": 10.5,
+                "Weight": 1
             },
             {
                 "ProductId": 5,
-                "Units": 125
+                "Units": 125,
+                "ProductName": "Galletas",
+                "Price": 24,
+                "Weight": 10
             }
         ]
     }
