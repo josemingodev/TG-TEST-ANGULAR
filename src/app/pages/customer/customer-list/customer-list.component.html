@@ -1,0 +1,72 @@
+<nz-content>
+<div>
+  <h3 nz-typography>Lista de clientes</h3>
+  <nz-table #filterTableCustomer  [nzData]="customers" nzTableLayout="fixed" nzBordered >
+    <thead>
+      <tr>
+        <th
+            *ngFor="let column of filterListCustomer"
+            [nzSortPriority]="column.priority"
+            [nzSortFn]="column.compare"
+          >
+            {{ column.name }}
+          </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of filterTableCustomer.data" (click)="select(customer.CustomerId)">
+        <td>{{customer.CustomerId}}</td>
+        <td>{{customer.Name}}</td>
+        <td>{{customer.EmailAddress}}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+  <nz-divider></nz-divider>
+</div>
+<div *ngIf="customerSelected > 0">
+  <h3 nz-typography>Detalle de cliente</h3>
+  <nz-table #tableSales [nzData]="salesCustomerSelected" nzBordered >
+    <thead>
+      <tr>
+        <th></th>
+        <th>Sale ID</th>
+        <th>Total Price</th>
+        <th>Total Weight</th>
+        <th>Num.Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-template ngFor let-data [ngForOf]="tableSales.data">
+        <tr>
+          <td [(nzExpand)]="data.Expand">See Purchases</td>
+          <td>{{ data.SaleID }}</td>
+          <td>{{ data.TotalPrice }}</td>
+          <td>{{ data.TotalWeight }}</td>
+          <td>{{ data.Lines.length }}</td>
+        </tr>
+        <tr [nzExpand]="data.Expand">
+          <nz-table #lineTable [nzData]="data.Lines" nzSize="small" [nzShowPagination]="false" >
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Weight</th>
+                <th>Units</th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr *ngFor="let line of lineTable.data">
+                <td>{{ line.ProductName }}</td>
+                <td>{{ line.Price }}</td>
+                <td>{{ line.Weight }}</td>
+                <td>{{ line.Units }}</td>
+              </tr>
+            </tbody>
+          </nz-table>
+        </tr>
+      </ng-template>
+    </tbody>
+  </nz-table>
+  <nz-divider></nz-divider>
+</div>
+</nz-content>

@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
-
 import { SharedModule } from 'src/app/shared/shared.module';
-
+import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerRoutingModule } from './customer-routing.module';
-
 import { CustomerComponent } from './customer.component';
 
 @NgModule({
@@ -11,7 +9,13 @@ import { CustomerComponent } from './customer.component';
     CustomerRoutingModule,
     SharedModule
   ],
-  declarations: [CustomerComponent],
-  exports: [CustomerComponent]
+  declarations: [
+    CustomerComponent,
+    CustomerListComponent
+  ],
+  exports: [
+    CustomerComponent,
+    CustomerComponent
+  ]
 })
 export class CustomerModule { }
