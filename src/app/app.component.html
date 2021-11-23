@@ -11,11 +11,14 @@
       </a>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+      <li nz-submenu nzTitle="Clientes" nzIcon="appstore">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/customer">Cliente</a>
-          </li>
+          <li nz-menu-item routerLink="customer/customerList">Lista de clientes</li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Productos" nzIcon="appstore">
+        <ul>
+          <li nz-menu-item routerLink="product/productList">Lista de productos</li>
         </ul>
       </li>
     </ul>
