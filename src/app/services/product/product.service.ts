@@ -13,6 +13,11 @@ export class ProductService {
         return new Observable<Product[]>(
             observable => {
                 const data: Product[] = [];
+                products.forEach(
+                    (product: any) => {
+                        data.push(new Product().build(product));
+                    }
+                );
                 observable.next(data);
             }
         );
