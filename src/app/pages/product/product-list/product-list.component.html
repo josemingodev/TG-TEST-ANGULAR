@@ -1,0 +1,22 @@
+<nz-table #filterTable  [nzData]="products" nzTableLayout="fixed">
+    <thead>
+      <tr>
+        <th
+            *ngFor="let column of filterList"
+            [nzSortPriority]="column.priority"
+            [nzSortFn]="column.compare"
+            [nzSortOrder]="column.sortOrder"
+          >
+            {{ column.name }}
+          </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of filterTable.data">
+        <td>{{customer.ProductId}}</td>
+        <td>{{customer.Name}}</td>
+        <td>{{customer.Price}}</td>
+        <td>{{customer.Weight}}</td>
+      </tr>
+    </tbody>
+</nz-table>
